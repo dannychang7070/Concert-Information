@@ -1,0 +1,39 @@
+.App {
+  font-family: Arial, sans-serif;
+  color: #8a8a8a;
+  text-align: center;
+}
+.outer {
+  display: flex;
+  justify-content: space-around;
+}
+.inner {
+  width: 30%;
+  height: 40vh;
+  margin: 14px;
+  position: relative;
+  overflow: hidden;  
+}
+.card:hover .mask {
+  opacity: 0.5;
+}
+img {
+  width: 100%;
+  transition: 0.5s linear;
+  border-radius: 10px;
+}
+.mask {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  line-height: 100%;
+  font-size: 50px;
+  opacity: 0;
+  transition: 1s linear;
+  cursor: pointer;
+}
